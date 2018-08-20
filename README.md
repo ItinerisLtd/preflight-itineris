@@ -86,6 +86,11 @@ enabled = false # Enable if needed
 
 [extra-required-plugins]
 enabled = false # Enable if needed
+
+[inactive-plugins]
+excludes = [
+  'password-protected',
+]
 ```
 
 ## Usage
