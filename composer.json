@@ -29,7 +29,7 @@
         "php": "^7.2",
         "itinerisltd/preflight-command": "^0.5.1",
         "itinerisltd/preflight-extra": "^0.2.2",
-        "itinerisltd/preflight-yoast-seo": "^0.1.1",
+        "itinerisltd/preflight-yoast-seo": "@stable",
         "wp-cli/wp-cli": "^2.0"
     },
     "require-dev": {
