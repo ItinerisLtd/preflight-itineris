@@ -8,7 +8,6 @@ use Itineris\Preflight\Itineris\Checkers\ProductionWPEnv;
 use Itineris\Preflight\Itineris\Checkers\RequiredCachingPlugin;
 use Itineris\Preflight\Itineris\Checkers\RequiredConstants;
 use Itineris\Preflight\Itineris\Checkers\RequiredPlaceholderImage;
-
 use Itineris\Preflight\Itineris\Checkers\RequiredPlugins;
 use WP_CLI;
 
