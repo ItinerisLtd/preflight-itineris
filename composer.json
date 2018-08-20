@@ -1,0 +1,69 @@
+{
+    "name": "itinerisltd/preflight-itineris",
+    "type": "wp-cli-package",
+    "description": "Extra preflight-command checkers for Itineris projects.",
+    "keywords": [
+        "wordpress",
+        "wp",
+        "wp-cli",
+        "preflight",
+        "checklist"
+    ],
+    "homepage": "https://github.com/ItinerisLtd/preflight-itineris",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Itineris Limited",
+            "email": "hello@itineris.co.uk",
+            "homepage": "https://itineris.co.uk/",
+            "role": "Company"
+        },
+        {
+            "name": "Tang Rufus",
+            "email": "tangrufus@gmail.com",
+            "homepage": "https://typist.tech/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2",
+        "itinerisltd/preflight-command": "^0.4.0",
+        "itinerisltd/preflight-extra": "^0.2.1",
+        "itinerisltd/preflight-yoast-seo": "^0.1.0",
+        "wp-cli/wp-cli": "^2.0"
+    },
+    "require-dev": {
+        "automattic/vipwpcs": "dev-master",
+        "roave/security-advisories": "dev-master",
+        "wp-coding-standards/wpcs": "^1.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Itineris\\Preflight\\Itineris\\": "src/"
+        },
+        "files": [
+            "command.php"
+        ]
+    },
+    "prefer-stable": true,
+    "scripts": {
+        "check-style": "phpcs --standard=ruleset.xml --colors -p -s",
+        "pretag": [
+            "composer normalize",
+            "github_changelog_generator --no-verbose"
+        ]
+    },
+    "support": {
+        "email": "hello@itineris.co.uk",
+        "issues": "https://github.com/ItinerisLtd/preflight-itineris/issues",
+        "source": "https://github.com/ItinerisLtd/preflight-itineris"
+    }
+}
