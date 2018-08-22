@@ -27,9 +27,9 @@
     ],
     "require": {
         "php": "^7.2",
-        "itinerisltd/preflight-command": "^0.5.1",
-        "itinerisltd/preflight-extra": "^0.2.2",
-        "itinerisltd/preflight-yoast-seo": "@stable",
+        "itinerisltd/preflight-command": "^0.6.0",
+        "itinerisltd/preflight-extra": "*",
+        "itinerisltd/preflight-yoast-seo": "*",
         "wp-cli/wp-cli": "^2.0"
     },
     "require-dev": {

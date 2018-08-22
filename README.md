@@ -10,6 +10,14 @@ Extra [preflight-command](https://github.com/ItinerisLtd/preflight-command) chec
 
 **This package only make sense for Itineris projects. Abort immediately!**
 
+## What is this?
+
+This package adds the followings to Itineris projects so that you don't need to copy and paste:
+
+- [custom checkers](./src/Checkers)
+- [common config](./config/itineris.toml)
+- *bundle* other [`itinerisltd/preflight-xxx` packages](./composer.json)
+
 ## Installation
 
 ### 1A. WP CLI - Kinsta
@@ -21,9 +29,7 @@ Contact [Kinsta](https://bit.ly/kinsta-wp-cli-v2) support team to upgrade your s
 
 ```bash
 $ wp package install itinerisltd/preflight-itineris:@stable
-```
-
-Other [`itinerisltd/preflight-xxx` packages](./composer.json) are *bundled*. 
+``` 
 
 ### 1B. WP CLI - AWS
 
@@ -33,7 +39,7 @@ Merge [itinerisltd/trellis-aws](http://github.com/itinerisltd/trellis-aws) maste
 
 This means `<bedrock>/config/preflight.toml`:
 
-```
+```php
 // <bedrock>/config/application.php
 
 Config::define('PREFLIGHT_DIR', __DIR__);
@@ -55,42 +61,20 @@ Copy this to `<bedrock>/config/preflight.toml`:
 
 # TOML v0.5.0 not yet supported
 
-########################################################################
-#                                                                      #
-#     If you disable or change any `itineris-xxx` checker options,     #
-#     you must write comments explaining the reasons!                  #
-#                                                                      #
-########################################################################
+###########################################################
+#                                                         #
+#     If you disable or change checker options,           #
+#     you must write comments explaining the reasons!     #
+#                                                         #
+###########################################################
 
-[blacklisted-usernames]
-blacklist = [
-  'itineris',
-]
-
-[extra-expected-status-codes]
-enabled = false # Enable if needed
-
-# Use expected production URL (i.e: client's URL)
+# Use expected production URL (i.e: client's doamin)
 # Starts with 'https://'
 [extra-production-home-url]
 url = 'https://preflightcommand.com' # TODO
 
 [extra-production-site-url]
-url = 'https://preflightcommand.com' # TODO
-
-[extra-required-constants]
-enabled = false # Enable if needed
-
-[extra-required-packages]
-enabled = false # Enable if needed
-
-[extra-required-plugins]
-enabled = false # Enable if needed
-
-[inactive-plugins]
-excludes = [
-  'password-protected',
-]
+url = 'https://preflightcommand.com/wp' # TODO
 ```
 
 ## Usage
@@ -102,7 +86,10 @@ $ wp help preflight <subcommand>
 # List all checkers
 $ wp preflight checklist
 
-# Validate preflight.toml file
+# List all .toml config files
+$ wp preflight config paths
+
+# Validate all .toml config files
 $ wp preflight config validate
 
 # Run the checks
