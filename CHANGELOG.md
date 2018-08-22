@@ -1,10 +1,18 @@
 # Change Log
 
-## [0.1.2](https://github.com/ItinerisLtd/preflight-itineris/tree/0.1.2) (2018-08-21)
+## [0.2.0](https://github.com/ItinerisLtd/preflight-itineris/tree/0.2.0) (2018-08-22)
+[Full Changelog](https://github.com/ItinerisLtd/preflight-itineris/compare/0.1.2...0.2.0)
+
+**Merged pull requests:**
+
+- Update preflight-command to v0.6.0 [\#6](https://github.com/ItinerisLtd/preflight-itineris/pull/6) ([TangRufus](https://github.com/TangRufus))
+
+## [0.1.2](https://github.com/ItinerisLtd/preflight-itineris/tree/0.1.2) (2018-08-20)
 [Full Changelog](https://github.com/ItinerisLtd/preflight-itineris/compare/0.1.1...0.1.2)
 
 **Merged pull requests:**
 
+- Version bump 0.1.2 [\#5](https://github.com/ItinerisLtd/preflight-itineris/pull/5) ([TangRufus](https://github.com/TangRufus))
 - Update required constants list [\#4](https://github.com/ItinerisLtd/preflight-itineris/pull/4) ([TangRufus](https://github.com/TangRufus))
 
 ## [0.1.1](https://github.com/ItinerisLtd/preflight-itineris/tree/0.1.1) (2018-08-20)
